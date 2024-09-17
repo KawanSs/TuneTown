@@ -177,3 +177,16 @@ p{
     background-color: #AE4104;
     cursor: pointer;
 }
+
+/* CSS Responsivo -------------------------------------------- */
+@media screen and (max-width: 767px){
+    header .container ul{
+        display: flex;
+        align-items: center;
+    }   
+    header .container li{
+        display: inline;
+        align-items: center;
+        padding: 0;
+    }
+}
