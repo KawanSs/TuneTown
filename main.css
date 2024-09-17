@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Audley;
+    src: url(./fonts/Audrey-Normal.otf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Audley;
+    background-color: #FDF7F0;
+}
+a{
+    text-decoration: none;
+    color: #F27257;
+}
+
+/* Header--------------------------------------------- */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em;
+}
+.container .logo{
+    max-width: 40%;
+    margin-left: 5em;
+}
+.container img{
+    width: 30%;
+}
+.container li{
+    display: inline;
+    align-items: center;
+    padding: 40px;
+    font-weight: 700;
+    margin-right: 2em;
+    text-transform: uppercase;
+}
+.container a:hover{
+    color: #FDF7F0;
+    background-color: #AE4104;
+    border-radius: 8px;
+    padding: 0.3em;
+}
+
+/* Main-----------------------------------------------  */
+#about{
+    display: grid;
+    grid-template-columns: 20%, 80%;
+    margin-left: 10em;
+}
+#about picture img{
+    max-width: 100%;
+}
+#about .text{
+    padding: 2em;
+    border-left: 1px solid #F27257;
+    margin-left: 1em;
+}
+#about .text h2{
+    text-transform: uppercase;
+    color: #F27257;
+}
+p{
+    padding: 0.5em;
+    font-weight: bold;
+    color: #AE4104;
+}
+
+#products .container{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-top: 5em;
+    margin-right: 10em;
+}
+#products .text{
+    padding: 2em;
+    border-right: 1px solid #F27257;
+    margin-left: 1em;
+    text-transform: uppercase;
+    color: #F27257;
+}
+#products .text h2{
+    float: right;
+}
+#products .catalog{
+    overflow: hidden;
+}
+#products .description{
+    margin-top: 1em;
+}
+#products .description h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F27257;
+}
+#products .description button{
+    padding: 0.75em;
+    width: 100%;
+    color: #FDF7F0;
+    background-color: #F27257;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    margin-left: 0.5em;
+}
+#products .description button:hover{
+    background-color: #AE4104;
+    cursor: pointer;
+}
+
+
+#contact {
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+}
+#contact .container{
+    display: block;
+    align-items: center;
+    margin-left: 35%;
+}
+#contact .container .text{
+    padding: 0.5em;
+    border-bottom: 1px solid #F27257;
+}
+#contact .container .text h2{
+    color: #F27257;
+    text-transform: uppercase;
+}
+#contact form{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+    margin-top: 1em;
+}
+#contact .form-campo {
+    margin-bottom: 1em;
+    /* margin-right: 3em; */
+    color: #AE4104;
+}
+#contact .form-campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+#contact .form-campo input {
+    width: 100%;
+    padding: 1em 6em;
+    border: 1px solid #AE4104;
+    border-radius: 5px;
+    text-align: left;
+}
+#contact .form-campo textarea{
+    resize: none;
+    width: 100%;
+    padding: 1em 6em;
+    border: 1px solid #AE4104;
+    border-radius: 5px;
+    text-align: left;
+}
+#contact .container button {
+    margin-top: 2em;
+    width: 100%;
+    padding: 1.7em;
+    background-color: #F27257;
+    color: #FDF7F0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#contact .container button:hover{   
+    background-color: #AE4104;
+    cursor: pointer;
+}

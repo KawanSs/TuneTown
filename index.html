@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneTown</title>
+    <link rel="short icon" href="./Images/TuneTownLogo.jpg">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- <h1>TUNETOWN</h1> -->
+                <img src="./Images/TuneTownLogo.png" alt="TuneTownLogo">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about" id="btnAbout">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#products" id="btnProducts">Products</a>
+                    </li>
+                    <li>
+                        <a href="#contact" id="btnContacts">Place Your Order</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <!-- <picture> -->
+                <img src="./Images/store.jpg" alt="Loja TuneTown">
+            <!-- </picture> -->
+            <div class="text">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eligendi tempora earum cum voluptatum maxime ullam illum iste saepe, error vel voluptates eius delectus, praesentium ea enim odit laborum iusto.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint aperiam, distinctio harum ratione eveniet ipsam, culpa aliquid placeat vel exercitationem illo dolores, dolorem voluptatum iure vero quo iste consequuntur.</p>
+            </div>
+        </div>
+    </section>
+    <section id="products">
+        <div class="container">
+            <div class="text">
+                <h2>Products</h2>
+            </div>
+            <section>
+                <div class="catalog">
+                    <img src="./Images/bass_front.webp" alt="Bass Front"/>
+                    <img src="./Images/bass_center.webp" alt="Bass Core"/>
+                    <img src="./Images/bass_top.webp" alt="Bass Top"/>
+                </div>
+                <div class="description">
+                    <h3>Bass</h3>
+                    <p>Strinberg Sab55 Dw 5-String Bass Right-Handed.</p>
+                    <button type="button" class="addBtn">Add to Cart</button>
+                </div>
+            </section>
+            <section>
+                <div class="catalog">
+                    <img src="./Images/eletric_front.webp" alt="Eletric Guitar Front"/>
+                    <img src="./Images/eletric_center.webp" alt="Eletric Guitar Core"/>
+                    <img src="./Images/eletric_back.webp" alt="Eletric Guitar Back"/>
+                </div>
+                <div class="description">
+                    <h3>Eletric Guitar</h3>
+                    <p>Strinberg LPS Series LPS200 transparent red gloss linden with rosewood tuning fork.</p>
+                    <button type="button" class="addBtn">Add to Cart</button>
+                </div>
+            </section>
+            <section> 
+                <div class="catalog">
+                    <img src="./Images/guitar_front.webp" alt="Acoustic Guitar Front"/>
+                    <img src="./Images/guitar_center.webp" alt="Acoustic Guitar Core"/>
+                    <img src="./Images/guitar_back.webp" alt="Acoustic Guitar Back"/>
+                </div>
+                <div class="description">
+                    <h3>Acoustic Guitar</h3>
+                    <p>Toning AcElectric Guitar Agata 40 Cutway Eq 3 Bands Color Natural.</p>
+                    <button type="button" class="addBtn">Add to Cart</button>
+                </div>
+            </section>
+            <section>
+                <div class="catalog">
+                    <img src="./Images/banjo_front.webp" alt="Banjo Front"/>
+                    <img src="./Images/banjo_center.webp" alt="Banjo Core"/>
+                    <img src="./Images/banjo_back.webp" alt="Banjo Back"/>
+                </div>
+                <div class="description">
+                    <h3>Banjo</h3>
+                    <p>Student Banjo Rozini Rj14 Electric Wide Case Matte Imbuia.</p>
+                    <button type="button" class="addBtn">Add to Cart</button>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="text">
+                <h2>Place Your Order</h2>
+            </div>
+            <form id="form">
+                <div class="form-campo">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name Surname">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="email@domain.com">
+                </div>
+                <div class="form-campo">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-campo">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf">
+                </div>
+                <div class="form-campo">
+                    <label for="adress">Full Adress</label>
+                    <input type="text" id="adress" name="adress">
+                </div>
+                <div class="form-campo">
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip" name="zip">
+                </div>
+                <div class="form-campo">
+                    <label for="message">Interest</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="form-campo">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script> 
+</body>
+</html>
