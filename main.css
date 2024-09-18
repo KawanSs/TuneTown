@@ -149,7 +149,7 @@ p{
 }
 #contact .form-campo input {
     width: 100%;
-    padding: 1em 6em;
+    padding: 1em;
     border: 1px solid #AE4104;
     border-radius: 5px;
     text-align: left;
@@ -157,7 +157,7 @@ p{
 #contact .form-campo textarea{
     resize: none;
     width: 100%;
-    padding: 1em 6em;
+    padding: 1em;
     border: 1px solid #AE4104;
     border-radius: 5px;
     text-align: left;
@@ -180,13 +180,126 @@ p{
 
 /* CSS Responsivo -------------------------------------------- */
 @media screen and (max-width: 767px){
+    header .container{
+        margin-top: 2em;
+    }
+    header .container .logo{
+        max-width: 100%;
+        margin-left: 2em;
+    }
+    header .container img{
+        max-width: 100%;
+    }
     header .container ul{
-        display: flex;
+        display: block;
         align-items: center;
     }   
     header .container li{
         display: inline;
         align-items: center;
         padding: 0;
+        margin-right: 3em;
+    }
+    header .container a{
+        font-size: 14px;
+    }
+    header .container a:hover{
+        color: #AE4104;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    #about{
+        margin: 1em;
+        display: block;
+        align-items: center;
+    }
+    #about .container{
+        /* flex-direction: column; */
+        display: block;
+        align-items: center;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    #about img{
+        width: 100%;
+    }
+    #about .text{
+        padding: 1em;
+        border-left: 0px;
+        border-top:1px solid #F27257 ;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+    #about .text h2{
+        font-size: 1em;
+        text-transform: uppercase;
+        color: #F27257;
+    }
+    p{
+        font-size: 12px;
+        padding: 0.5em;
+        font-weight: bold;
+        color: #AE4104;
+    }
+
+    #products .container{
+        display: block;
+        align-items: center;
+        margin: 1em;
+    }
+    #products .text{
+        padding: 1em;
+        border-right: 0;
+        border-bottom: 1px solid #F27257;
+        margin-left: 0;
+    }
+    #products .text h2{
+        float: none;
+        font-size: 1em;
+    }
+    #products .description h3{
+        font-size: 1em;
+    }
+    #products section{
+        margin-top: 1em;
+    }
+
+    #contact{
+        display: block;
+        align-items: center;
+    }
+    #contact .container{
+        margin: 1em;
+    }
+    #contact .container .text h2{
+        font-size: 1em;
+    }
+    #contact form{
+        display: block;
+        margin-top: 1em;
+    }
+    #contact .form-campo {
+        margin-bottom: 0.5em;
+    }
+    #contact .form-campo input {
+        width: 100%;
+        padding: 1em;
+        border: 1px solid #AE4104;
+        border-radius: 5px;
+        text-align: left;
+    }
+    #contact .form-campo textarea{
+        resize: none;
+        width: 100%;
+        padding: 1em;
+        border: 1px solid #AE4104;
+        border-radius: 5px;
+        text-align: left;
+    }
+    #contact .container button {
+        margin-top: 1em;
+        padding: 0.5em;
     }
 }
