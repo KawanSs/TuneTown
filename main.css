@@ -178,6 +178,13 @@ p{
     cursor: pointer;
 }
 
+footer p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
 /* CSS Responsivo -------------------------------------------- */
 @media screen and (max-width: 767px){
     header .container{
