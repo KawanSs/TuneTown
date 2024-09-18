@@ -15,9 +15,6 @@ $(document).ready(function(){
     $('#zip').mask('00000-000', {
         placeholder: '012345-678'
     })
-    $('#adress').mask('', {
-        placeholder: 'Road, City - State'
-    })
     
     //moves
     $('#btnAbout').click(function(){
